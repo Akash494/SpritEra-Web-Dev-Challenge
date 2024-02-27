@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpriteEra</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body >
+                    <!-- CReating Using Tailwind -->
+                    
+                        <!-- Hero Section -->
+    <div class="container flex flex-col items-center h-[880px] relative">
+
+        <!-- Welcome Heading Container-->
+        <div class="h-[140px] w-full flex justify-center">  
+            
+            <div>
+                <img src="Welcome.jpg" alt="Welcome Image" class="h-[130px] w-[250px] ">
+            </div>
+                
+            <div class="flex mt-[42px]">
+                <span class="ml-[10px] text-blue-500 text-4xl font-bold">To</span>
+                <span class="ml-[10px] text-red-500 text-4xl font-bold">The</span>
+                <span class="ml-[15px] text-green-500 text-4xl font-bold">SpriteEra</span>   
+            </div>
+        
+        </div>
+        
+        <!-- Content-Description Container  -->
+        <div class="w-[90%] flex flex-col gap-[30px] group-click:block">
+
+            <!--Hero Section Image -->
+            <div class="contest-img">
+                <img src="Contest-Description.png" alt="bannerimg" class="rounded-lg">
+            </div>
+
+            <!-- contest Buttons -->
+            <div class="contest-btn">
+                <span class="border-4 px-2 py-2 rounded-lg font-bold border-red-500 ">Website</span>
+                <span class="border-4 px-2 py-2 rounded-lg font-bold border-red-500 ml-[50px]">UI/UX</span>
+            </div>
+
+            <!-- Content Box -->
+            <div class="flex flex-col items-center gap-[30px] border-4 bg-[#e6edff]">
+                
+                <h2 class="text-3xl font-bold mt-[20px] text-green-500">
+                    CodeRush Website Development Contest
+                </h2>
+    
+                <p class="font-lg ml-[10px]">
+                    In this contest, participants are tasked to attempt a set of questions.Once the answers are submitted or the timer runs out, the participant's selected answers should be automatically submitted. Your performance will be evaluted instantly.
+                </p>
+    
+                <p class="text-center font-bold text-2xl text-blue-500">
+                    So Are you ready ?
+                </p>
+    
+                <!-- Button for the Test Page -->
+                <button onclick="heroClick()" class="go-to-btn border h-[40px] w-[200px] px-2 py-2 bg-[#f44336] text-white inline mb-[15px] rounded-full">Go to Question Page</button>
+            </div>  
+
+        </div>
+        
+    </div>
+
+    <script>
+        function heroClick(){
+            window.open('InstructionPage.html',"_self");
+        }
+    </script>
+</body>
+</html>

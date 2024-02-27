@@ -1,0 +1,26 @@
+.go-to-btn{
+    width: fit-content;
+    background-color: orangered;
+    color: white;
+    box-shadow: 5px 5px 7px #0000003f;
+    position: relative;
+    z-index: 1;
+}
+
+.go-to-btn::before{
+    content:"";
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s linear 0s;
+    z-index: -1;
+}
+
+.go-to-btn:hover::before{
+    transform: scaleX(1);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Visible Window -->
+        <div class="visibleBox">
+            <h1 class="heading">Question Page</h1>
+
+            <div class="FirstContainer">
+            <!-- Question Box -->
+                <div class="question_box">
+                    <section id = "questions">
+                    </section>
+                </div>
+    
+                <!-- Time Information Box -->
+                <div class="rightBox">
+                    <p>Time Alloted : 5 mins</p>
+                    <div id="timeText">
+                        <span>Time taken :</span> <span id="min">0</span> <span>min :</span> <span id="sec">0</span> <span>sec</span>
+                    </div>
+                    <button onclick="ActionPerform()" class="go-to-btn">Submit Test</button>
+                </div>
+     
+            </div>
+        </div>
+        
+        <!-- Hidden Window -->
+        <div class="SecondContainer">
+
+            <h1 class="heading">Thank You!</h1>
+            <p class="textDecoration">Your test is submitted successfully</p>
+
+            <!-- Tells the Correct Answers -->
+            <section id ="scoreSection"></section>
+            
+            <!-- Shows the Marked Options -->
+            <div class="ReviewBox">   
+                <p class="textDecoration">Answers Selected </p><br> 
+                <div id="question"></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- Javscript -->
+    <script src="final.js"></script>
+</body>
+</html>

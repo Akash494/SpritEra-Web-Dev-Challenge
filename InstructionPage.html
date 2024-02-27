@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstructionPage</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="Instruction.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+                    <!-- CReating Using Tailwind -->
+                    
+                    <!-- Main Container -->
+    <div class="container h-[100vh] w-[100vw] bg-gradient-to-r from-cyan-500 to-blue-500 flex justify-center items-center">
+        
+                    <!-- Item Container -->
+        <div class="instructions-box text-red-500 w-[800px] h-[380px] space-y-8 relative bg-[#e6edff] rounded-xl">
+
+            <u><h1 class="text-4xl ml-[30px] mt-[18px]">Instructions before beginning :</h1></u>
+            
+            <!-- Instructions -->
+            <ul class="space-y-1 ml-[30px] mt-[80px]">
+                <li class="text-xl">1. This is a timed test. Time alloted will be of 5 minutes.</li>
+                <li class="text-xl">2. Any kind of cheating attempt is strictly prohibited.</li>
+                <li class="text-xl">3. Attempting all the questions is not necessary.</li>
+                <li class="text-xl">4. There is no negative markings.</li>
+                <li class="text-xl">5. To pass the test candidate need to answer atleast 3 <br>questions.</li>
+            </ul>
+
+            
+            <button onclick="Perform()" class="go-to-btn border h-[40px] px-2 py-2 bg-[#f44336] text-white inline mb-[40px] ml-[200px]">Begin the Test</button>
+        
+        </div>
+        
+        <!-- Person Pointing to Instructions Image -->
+        <img src="men-pointing.png" alt="men pointing left" height="500px" width="450px" class="absolute top-[160px] right-40">
+
+    </div>
+    
+    <!-- Javscript -->
+    <script>
+        function Perform(){
+            window.open('final.html',"_self");
+        }
+    </script>
+</body>
+</html>
